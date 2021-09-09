@@ -4,7 +4,8 @@
     "scripts": {
         "format": "lerna run format",
         "lint": "lerna run lint --no-bail",
-        "test": "lerna run test --stream --no-bail"
+        "test": "lerna run test --stream --no-bail",
+        "prepare": "husky install"
     },
     "devDependencies": {
         "@types/jest": "^24.0.13",
@@ -14,7 +15,7 @@
         "husky": "^2.3.0",
         "jest": "^24.8.0",
         "lerna": "^3.14.0"
-    },  
+    },
     "workspaces": [
         "packages/*"
     ],
