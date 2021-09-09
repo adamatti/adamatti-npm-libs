@@ -11,5 +11,6 @@
         "@types/jest": "^24.0.13",
         "eslint": "^5.16.0",
         "jest": "^24.8.0"
-    }
+    },
+    "gitHead": "a6baa62fb64cad9dbf7d40765e73d707b12d1448"
 }
