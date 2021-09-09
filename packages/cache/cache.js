@@ -14,7 +14,7 @@ const cacheProvider = () => {
 
   return {
     cache,
-    fakeFeature1
+    fakeFeature1,
   };
 };
 

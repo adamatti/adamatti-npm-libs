@@ -11,6 +11,6 @@ test:
 	@yarn test
 
 lint:
-	@yarn lint
+	@yarn fix
 
 check: lint test
