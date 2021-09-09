@@ -7,6 +7,8 @@
         "test": "lerna run test --stream --no-bail"
     },
     "devDependencies": {
+        "@commitlint/cli": "^13.1.0",
+        "@commitlint/config-conventional": "^13.1.0",
         "@types/jest": "^24.0.13",
         "concurrently": "^4.1.0",
         "eslint": "^7.32.0",
@@ -18,6 +20,5 @@
     "workspaces": [
         "packages/*"
     ],
-    "private": true,
-    "dependencies": {}
+    "private": true
 }
