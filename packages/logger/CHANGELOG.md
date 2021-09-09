@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.1](https://github.com/adamatti/adamatti-npm-libs/compare/@adamatti.org/logger@0.1.0...@adamatti.org/logger@0.1.1) (2021-09-09)
+
+
+### Bug Fixes
+
+* **logger:** sample fix ([d6e786c](https://github.com/adamatti/adamatti-npm-libs/commit/d6e786cbcfd322151c4de5f04e5749dbf6c27226))
+
+
+
+
+
 # [0.1.0](https://github.com/adamatti/adamatti-npm-libs/compare/@adamatti.org/logger@0.0.2...@adamatti.org/logger@0.1.0) (2021-09-09)
 
 
