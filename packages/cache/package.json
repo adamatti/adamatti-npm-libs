@@ -1,0 +1,16 @@
+{
+    "name": "@adamatti.org/cache",
+    "version": "0.0.0",
+    "main": "cache.js",
+    "license": "UNLICENSED",
+    "scripts": {
+        "lint": "eslint '**/*.js' --fix",
+        "test": "jest --passWithNoTests"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "@types/jest": "^24.0.13",
+        "eslint": "^5.16.0",
+        "jest": "^24.8.0"    
+    }
+}

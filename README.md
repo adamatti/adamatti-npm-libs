@@ -1,0 +1,1 @@
+Pet project to test lerna / husky / circle ci / npm publish.
