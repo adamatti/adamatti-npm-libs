@@ -11,6 +11,7 @@ clear:
 
 install:
 	@yarn
+	@yarn lerna bootstrap
 
 test:
 	@yarn test
