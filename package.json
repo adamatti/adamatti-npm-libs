@@ -16,6 +16,6 @@
     "workspaces": [
         "packages/*"
     ],
-    "private": true,
+    "private": false,
     "dependencies": {}
 }
