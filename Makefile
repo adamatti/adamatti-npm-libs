@@ -25,3 +25,6 @@ format:
 check: format lint test
 
 full-check: clear install check
+
+test-pre-commit:
+	./.git/hooks/pre-commit
