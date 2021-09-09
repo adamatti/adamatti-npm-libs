@@ -18,4 +18,6 @@ const logger = {
 // TODO implement
 logger.child = () => logger;
 
+logger.fakeFeature1 = ()=> {};
+
 module.exports = logger;
