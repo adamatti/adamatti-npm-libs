@@ -10,8 +10,11 @@ const cacheProvider = () => {
     return cacheTable[key];
   };
 
+  const fakeFeature1 = ()=> {};
+
   return {
     cache,
+    fakeFeature1
   };
 };
 
