@@ -19,6 +19,8 @@ const logger = {
 logger.child = () => logger;
 
 logger.fakeFeature1 = ()=> {};
-logger.fakeFeature2 = ()=> {};
+logger.fakeFeature2 = ()=> {
+  return null;
+};
 
 module.exports = logger;
