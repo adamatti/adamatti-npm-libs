@@ -4,7 +4,8 @@
     "main": "logger.js",
     "license": "UNLICENSED",
     "scripts": {
-        "lint": "eslint '**/*.js' --fix",
+        "lint": "eslint '**/*.js'",
+        "fix": "eslint '**/*.js' --fix",
         "test": "jest --passWithNoTests"
     },
     "devDependencies": {
