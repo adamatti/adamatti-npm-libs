@@ -1,11 +1,10 @@
-FROM node:12-alpine
+FROM node:12
 
 WORKDIR /app
 
-# Enable access to private npm registry
-
 ARG NPM_REGISTRY_URL
 ARG NPM_AUTH_TOKEN
+ARG GITHUB_TOKEN
 RUN echo "//${NPM_REGISTRY_URL}/:_authToken=${NPM_AUTH_TOKEN}" > "${HOME}/.npmrc"
 RUN yarn global add lerna@3.14.1
 
@@ -15,3 +14,6 @@ RUN yarn install
 COPY . .
 RUN lerna bootstrap
 
+RUN git config --global user.name "Codeship"
+RUN git config --global user.email "noreply@noreply.com"
+RUN git remote set-url origin "https://$GITHUB_TOKEN@github.com/adamatti/adamatti-npm-libs.git"
