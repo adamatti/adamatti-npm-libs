@@ -29,8 +29,19 @@ full-check: clear install check
 test-pre-commit:
 	./.git/hooks/pre-commit
 
-codeship-encrypt:
+codeship-encrypt: ## encrypt build_args (codeship)
 	jet encrypt codeship/build_args codeship/build_args.encrypted
 
-codeship-test:
+codeship-test: ## Test codeship steps
 	jet steps
+
+docker-build: 
+	docker build -f codeship/docker/builder/Dockerfile \
+		-t adamatti-libs:latest \
+		--build-arg NPM_REGISTRY_URL="${NPM_REGISTRY_URL}" \
+		--build-arg NPM_AUTH_TOKEN="${NPM_AUTH_TOKEN}" \
+		--build-arg GITHUB_TOKEN="${GITHUB_TOKEN}" \
+		.
+
+docker-sh: docker-build ## Build docker, sh inside it
+	docker run -it adamatti-libs sh

@@ -6,3 +6,8 @@
     - service: builder
       name: test
       command: yarn test
+
+- name: publish
+  tag: ^(master|main)
+  service: builder
+  command: lerna publish --yes
