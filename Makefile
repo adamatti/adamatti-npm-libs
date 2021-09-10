@@ -28,3 +28,9 @@ full-check: clear install check
 
 test-pre-commit:
 	./.git/hooks/pre-commit
+
+codeship-encrypt:
+	jet encrypt codeship/build_args codeship/build_args.encrypted
+
+codeship-test:
+	jet steps

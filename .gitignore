@@ -1,4 +1,9 @@
 node_modules/
+
+codeship/build_args
+codeship.aes
 package-lock.json
+TODO.md
+
 *.zip
 *.log

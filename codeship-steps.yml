@@ -1,0 +1,8 @@
+- type: parallel
+  steps:
+    - service: builder
+      name: lint
+      command: yarn lint
+    - service: builder
+      name: test
+      command: yarn test
