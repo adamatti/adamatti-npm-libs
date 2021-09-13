@@ -12,7 +12,7 @@
   steps:
     - service: builder
       name: git branch
-      command: git branch
+      command: git branch -a
     - service: builder
       name: publish
       command: lerna publish --yes
