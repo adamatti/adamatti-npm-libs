@@ -7,7 +7,12 @@
       name: test
       command: yarn test
 
-- name: publish
-  tag: ^(master|main)
-  service: builder
-  command: lerna publish --yes
+- type: serial
+  tag: ^(master|main)  
+  steps:
+    - service: builder
+      name: git branch
+      command: git branch
+    - service: builder
+      name: publish
+      command: lerna publish --yes
