@@ -12,4 +12,4 @@
   steps:
     - service: builder
       name: publish
-      command: checkout main && lerna publish --yes
+      command: "git checkout main && lerna publish --yes"
