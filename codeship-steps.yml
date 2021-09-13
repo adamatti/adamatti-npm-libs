@@ -11,17 +11,5 @@
   tag: ^(master|main)  
   steps:
     - service: builder
-      name: git branch
-      command: git branch -a
-    - service: builder
-      name: fetch all
-      command: git fetch --all
-    - service: builder
-      name: git status
-      command: git status -v
-    - service: builder
-      name: checkout main
-      command: git checkout main
-    - service: builder
       name: publish
-      command: lerna publish --yes
+      command: checkout main && lerna publish --yes
