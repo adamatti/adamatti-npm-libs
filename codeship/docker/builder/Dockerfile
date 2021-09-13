@@ -11,7 +11,7 @@ RUN yarn global add lerna@3.14.1
 COPY package.json yarn.lock ./
 RUN yarn install
 
-COPY . .
+COPY . .git/ ./
 RUN lerna bootstrap
 
 RUN git config --global user.name "Codeship"
