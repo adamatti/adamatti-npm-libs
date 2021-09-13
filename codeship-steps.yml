@@ -14,5 +14,8 @@
       name: git branch
       command: git branch -a
     - service: builder
+      name: fetch all
+      command: git fetch --all
+    - service: builder
       name: publish
       command: lerna publish --yes
