@@ -16,4 +16,4 @@ RUN lerna bootstrap
 
 RUN git config --global user.name "Codeship"
 RUN git config --global user.email "noreply@noreply.com"
-RUN git remote set-url origin "https://$GITHUB_TOKEN@github.com/adamatti/adamatti-npm-libs.git"
+RUN git remote set-url origin "https://x-access-token:$GITHUB_TOKEN@github.com/adamatti/adamatti-npm-libs.git"
