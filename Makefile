@@ -33,7 +33,7 @@ codeship-encrypt: ## encrypt build_args (codeship)
 	jet encrypt codeship/build_args codeship/build_args.encrypted
 
 codeship-test: ## Test codeship steps
-	jet steps
+	jet steps --push
 
 docker-build: 
 	@docker build -f codeship/docker/builder/Dockerfile \
